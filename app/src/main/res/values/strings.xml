@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProjectMobile</string>
+    <string name="welcom">Welcome</string>
+    <string name="uniformes">Uniformes</string>
+    <string name="carrito">Carrito</string>
+</resources>

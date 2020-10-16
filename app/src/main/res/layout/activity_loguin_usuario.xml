@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@drawable/fondonumdos"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layoutInput"
+        android:layout_width="330dp"
+        android:layout_height="632dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rec_gradient_fb"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@id/layoutInput"
+            android:layout_gravity="center"
+            android:src="@drawable/logouniforme" />
+
+        <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Usuario"
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/round_border"
+            android:drawableRight="@drawable/ic_baseline_person"
+            
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="    Usuario"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Contraseña"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:drawablePadding="20dp"
+            android:background="@drawable/round_border"
+            android:hint="    *******"
+            android:inputType="textPassword"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Direccion"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:drawablePadding="20dp"
+            android:inputType="textPersonName"
+            android:hint="    Direccion"
+            android:background="@drawable/round_border"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Correo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:drawablePadding="20dp"
+            android:hint="    usuari@gmail.com"
+            android:background="@drawable/round_border"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="157dp" />/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Telefono"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:drawablePadding="20dp"
+            android:hint="    3256486"
+            android:background="@drawable/round_border"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="157dp" />/>
+
+        <Button
+
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_bg"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Registrarse"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnInicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:background="@drawable/round_bg"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/registroR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/abel"
+        android:text="Registro"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
