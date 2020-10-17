@@ -9,26 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetalleUniforme"/>
+        <activity android:name=".Ver_Pedido"></activity>
+        <activity android:name=".DetalleUniforme" />
         <activity android:name=".activityMenu" />
-        <activity android:name=".activity_splashani" >
+        <activity android:name=".activity_splashani">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainDetalleUniforme"/>
-        <activity android:name=".LoguinUsuario"/>
-        <activity android:name=".logo"/>
-        <activity android:name=".Product"/>
-        <activity android:name=".nuevoProducto"/>
-        <activity android:name=".NuevoDetalleCompra"/>
-        <activity android:name=".PrincipalDetalleProducto"/>
-
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainDetalleUniforme" />
+        <activity android:name=".LoguinUsuario" />
+        <activity android:name=".logo" />
+        <activity android:name=".Product" />
+        <activity android:name=".nuevoProducto" />
+        <activity android:name=".NuevoDetalleCompra" />
+        <activity android:name=".PrincipalDetalleProducto" />
+        <activity android:name=".Acerca" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

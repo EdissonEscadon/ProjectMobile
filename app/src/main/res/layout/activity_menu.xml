@@ -155,7 +155,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/carCarrito"
+                android:id="@+id/cardVerPedido"
                 android:layout_width="149dp"
                 android:layout_height="172dp"
                 android:layout_marginStart="30dp"

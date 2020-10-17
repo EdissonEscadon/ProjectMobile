@@ -33,7 +33,7 @@ public class Product extends AppCompatActivity {
         listView.setAdapter(productoAdapter);
 
 
-
+/*
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -46,7 +46,7 @@ public class Product extends AppCompatActivity {
 
             }
         });
-
+*/
         Button buttonVerCarrito = (Button)findViewById(R.id.btnVerCarrito);
 
         buttonVerCarrito.setOnClickListener(new View.OnClickListener() {
@@ -80,5 +80,21 @@ public class Product extends AppCompatActivity {
             }
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Cursor TiendaItem=(Cursor)listView.getItemAtPosition(i);
+                String nombre = TiendaItem.getString(2);
+                String precio = TiendaItem.getString(3);
+                Intent da = new Intent(getApplicationContext(),NuevoDetalleCompra.class);
+                da.putExtra("nombre",nombre);
+                da.putExtra("precio",precio);
+
+                startActivity(da);
+            }
+        });
     }
-}
+
+
+    }
+

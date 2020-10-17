@@ -44,7 +44,7 @@ public class activityMenu extends AppCompatActivity {
         cardPrueba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),logo.class);
+                Intent intent = new Intent(getApplicationContext(),Acerca.class);
                 startActivity(intent);
             }
         });
@@ -54,6 +54,15 @@ public class activityMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),nuevoProducto.class);
+                startActivity(intent);
+            }
+        });
+
+        CardView verPedido = (CardView)findViewById(R.id.cardVerPedido);
+        verPedido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),MainDetalleUniforme.class);
                 startActivity(intent);
             }
         });

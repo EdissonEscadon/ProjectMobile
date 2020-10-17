@@ -22,11 +22,11 @@ public class PrincipalDetalleProducto extends AppCompatActivity {
 
        final Cursor cursorCarrito = detalleCompraBd.listarDetalleCompra();
 
-       String[] desde = new String[]{"nombre","descripcion","cantidad","total_pagar"};
-       int[] hasta = new int[]{R.id.txtNombre,R.id.txtDescripcion,R.id.txtCantidad,R.id.txtPrecio};
+       String[] desde = new String[]{"nombre","cantidad","total_pagar","descripcion"};
+       int[] hasta = new int[]{R.id.txtNom,R.id.txtCant,R.id.txtPre,R.id.txtDescrip};
 
         final CursorAdapter carritoAdapter= new SimpleCursorAdapter(getApplicationContext(),
-                R.layout.activity_lista_carrito,cursorCarrito,desde,hasta,0);
+                R.layout.detalle_nuevo,cursorCarrito,desde,hasta,0);
 
         final ListView listView=(ListView)findViewById(R.id.mostrarCarrito);
         listView.setAdapter(carritoAdapter);
