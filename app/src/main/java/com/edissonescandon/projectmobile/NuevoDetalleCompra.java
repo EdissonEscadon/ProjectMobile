@@ -22,7 +22,7 @@ public class NuevoDetalleCompra extends AppCompatActivity {
         final TextView texPrecio =(TextView)findViewById(R.id.textViewPrecio);
         final TextView textFecha = (TextView)findViewById(R.id.editTextFecha);
         final TextView titulo = (TextView)findViewById(R.id.lista);
-        final TextView textitoNombre = (TextView)findViewById(R.id.textitoNombrecito);
+
         final DetalleCompraBd detalleCompraBd= new DetalleCompraBd(getApplicationContext());
 
 
@@ -30,7 +30,7 @@ public class NuevoDetalleCompra extends AppCompatActivity {
         Bundle lista = getIntent().getExtras();
         Button buttonAgregar = (Button)findViewById(R.id.btnAgregar);
         /*if(lista==null){*/
-            titulo.setText("nuevo cliente");
+            titulo.setText("Nueva Compra");
             buttonAgregar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -42,7 +42,7 @@ public class NuevoDetalleCompra extends AppCompatActivity {
                     // String precioTotal= String.valueOf(res);
 
 
-                    DetalleProducto detalleProducto= new  DetalleProducto(textitoNombre.getText().toString(),
+                    DetalleProducto detalleProducto= new  DetalleProducto(texNombre.getText().toString(),
                             editTextCantidad.getText().toString(),
                             texPrecio.getText().toString(),
                             textFecha.getText().toString(),
@@ -60,7 +60,7 @@ public class NuevoDetalleCompra extends AppCompatActivity {
             //titulo.setText("Ver producto");
             String codi = lista.getString("nombre");
             String nom = lista.getString("precio");
-            textitoNombre.setText(codi);
+            texNombre.setText(codi);
             texNombre.setEnabled(false);
             texPrecio.setText(nom);
             texPrecio.setEnabled(false);

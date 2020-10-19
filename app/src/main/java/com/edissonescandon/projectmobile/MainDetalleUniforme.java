@@ -12,11 +12,11 @@ public class MainDetalleUniforme extends AppCompatActivity {
     ListView lista;
     String[][] datos = {
             {"Chompa Mujer", "Selecciono 2 chompas","Talla: 38","12$  v/u", "Compra Guardada"},
-            {"Uniforme de Gala", "Selecciono 1 uniforme de Gala","Talla: 40","36$ v/u", "Compra Guardada"},
+
             {"Uniforme Deportivo","Selecciono 1 uniforme Deportivo","Talla: 36","50% v/u", "Compra Guardada"},
 
     };
-    int[] datosImg = { R.drawable.ri, R.drawable.uni,R.drawable.tec};
+    int[] datosImg = { R.drawable.ri,R.drawable.tec};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

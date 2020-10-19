@@ -22,9 +22,10 @@ public class Product extends AppCompatActivity {
         final ProductoBd productoBd= new ProductoBd(getApplicationContext());
 
         final Cursor cursorProducto = productoBd.listarProducto();
+        String nombre="nombre";
 
         String[] desde =new String[]{"nombre","precio","modelo","descripcion"};
-        int[] hasta =new int[]{R.id.txtNombre,R.id.txtPrecio,R.id.txtModelo,R.id.txtDescripcion};
+        int[] hasta =new int[]{R.id.txtNombre,R.id.txtPrecio,R.id.txtModelo,R.id.txtDescrip};
 
         final CursorAdapter productoAdapter= new SimpleCursorAdapter(getApplicationContext(),
                 R.layout.activity_productoscargados,cursorProducto,desde,hasta,0);

@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:layout_marginTop="20dp"
         android:id="@+id/imageView"
         android:layout_width="78dp"
         android:layout_height="45dp"
@@ -17,6 +18,7 @@
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
         android:text="TextView"
         android:textSize="24sp" />
 
@@ -24,6 +26,7 @@
         android:id="@+id/txtPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
         android:text="TextView"
         android:textSize="18sp" />
 
@@ -31,6 +34,7 @@
         android:id="@+id/txtModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
         android:text="TextView"
         android:textSize="18sp" />
 
@@ -38,9 +42,8 @@
         android:id="@+id/txtDescrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
         android:text="TextView"
         android:textSize="18sp" />
-
-
 
 </LinearLayout>
